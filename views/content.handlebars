@@ -1,0 +1,15 @@
+<div class="container">
+    <button id="scrape-button">Scrape Articles!</button>
+    <button id="delete-all-button">Remove Articles</button>
+    <div class="articles">
+        {{#each article}}
+        <div class="article-data">
+            <p>People: {{title}}</p>
+            <p>Link: {{link}}</p>
+            <button id="edit-button" data-id="{{_id}}">Add Note</button>
+            <button id="delete-button" data-id="{{_id}}">Remove Article</button>
+        </div>
+        {{/each}}
+
+    </div>
+</div>
